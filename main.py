@@ -51,8 +51,8 @@ def addItem(item: ItemSchema, session: Session = Depends(db_session)):
     return todoitem
 
 
-# API put endpoint
-@app.put("/api/todo/{id}")
+# API patch endpoint
+@app.patch("/api/todo/{id}")
 def updateItem(id: int, item: ItemSchema,
                session: Session = Depends(db_session)):
     todoitem = session.query(Item).get(id)
