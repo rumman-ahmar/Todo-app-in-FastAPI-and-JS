@@ -11,7 +11,7 @@ let getTodoItems = () => {
                     <li
                         class="list-group-item d-flex justify-content-between align-items-center
                                 border-start-0 border-top-0 border-end-0 border-bottom rounded-0 mb-2">
-                        <div class="d-flex align-items-center" id=item-${item.id} data-value=${item.task}>
+                        <div class="d-flex align-items-center" id="item-${item.id}" data-value="${item.task}">
                             ${item.task}
                         </div>
                         <div class="float-end">
