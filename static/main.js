@@ -65,7 +65,7 @@ let updateTodoItem = (id) => {
     updateTodoBtn.addEventListener('click', () => {
         const data = { task: modalInput.value };
         fetch(`/api/todo/${id}`, {
-            method: 'PUT',
+            method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',
             },
